@@ -1,7 +1,6 @@
 bench get-app https://git.gonext.com.mx/frappe/frappe.git --branch prod &&
 rm -rf apps/frappe/frappe/integrations/doctype/twilio_settings &&
 bench get-app https://git.gonext.com.mx/frappe/erpnext.git --branch prod &&
-bench get-app git@github.com:taquero-programador/reatail.git &&
 bench get-app https://git.gonext.com.mx/ibravo/Mobile.git --branch dev &&
 bench get-app https://git.gonext.com.mx/valsa/e_billing.git --branch prod &&
 bench get-app https://git.gonext.com.mx/valsa/sales_drive.git --branch prod &&
