@@ -1,3 +1,4 @@
+#!/bin/sh
 bench get-app https://git.gonext.com.mx/frappe/frappe.git --branch prod &&
 rm -rf apps/frappe/frappe/integrations/doctype/twilio_settings &&
 bench get-app https://git.gonext.com.mx/frappe/erpnext.git --branch prod &&
