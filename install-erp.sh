@@ -12,7 +12,6 @@ bench get-app https://git.gonext.com.mx/valsa/cheque_management.git --branch pro
 bench get-app https://git.gonext.com.mx/valsa/valsa.git --branch prod &&
 bench get-app https://git.gonext.com.mx/valsa/logistics.git --branch prod &&
 bench new-site valsa.site --db-name valsa_db_mx &&
-bench --site valsa.site install-app frappe erpnext &&
 cd sites && touch currentsite.txt && echo 'valsa.site' > currentsite.txt && cd .. &&
 bench --site valsa.site set-config developer_mode true &&
 bench --site valsa.site install-app frappe erpnext mobile e_billing edi sales_drive cheque_management logistics valsa retail
