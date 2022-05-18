@@ -12,4 +12,4 @@ bench new-site valsa.site --db-name valsa_db_mx &&
 bench --site valsa.site install-app frappe erpnext &&
 touch sites/currentsite.txt && echo 'valsa.site' > sites/currentsite.txt &&
 bench --site valsa.site set-config developer_mode true &&
-bench --site valsa.site install-app frappe erpnext mobile e_billing sales_drive edi cheque_management logistics valsa retail
+bench --site valsa.site install-app frappe erpnext mobile e_billing sales_drive edi cheque_management logistics valsa
