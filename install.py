@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import os
 
 name_bench = input('Name for bench init: ')
