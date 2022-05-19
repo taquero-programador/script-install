@@ -12,10 +12,10 @@ os.system(f"bench init {name_bench or 'frappe-bench'} --frappe-branch version-13
 	rm -rf apps/frappe/frappe/integrations/doctype/twilio_settings &&\
 	bench get-app https://git.gonext.com.mx/frappe/erpnext.git --branch prod &&\
 	bench get-app https://git.gonext.com.mx/ibravo/Mobile.git --branch dev &&\
-	bench get-app https://git.gonext.com.mx/valsa/e_billing.git --branch prod &&\
 	bench get-app https://git.gonext.com.mx/valsa/sales_drive.git --branch prod &&\
 	bench get-app https://git.gonext.com.mx/valsa/edi.git --branch prod &&\
 	bench get-app https://git.gonext.com.mx/valsa/cheque_management.git --branch prod &&\
+	bench get-app https://git.gonext.com.mx/valsa/e_billing.git --branch prod &&\
 	bench get-app https://git.gonext.com.mx/valsa/valsa.git --branch prod &&\
 	bench get-app https://git.gonext.com.mx/valsa/logistics.git --branch prod &&\
 	bench get-app https://git.gonext.com.mx/valsa/Datalogic.git --branch prod &&\
