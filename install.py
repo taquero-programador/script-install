@@ -19,6 +19,6 @@ os.system(f"bench init {name_bench or 'frappe-bench'} --frappe-branch version-13
 	bench get-app https://git.gonext.com.mx/valsa/valsa.git --branch prod &&\
 	bench get-app https://git.gonext.com.mx/valsa/logistics.git --branch prod &&\
 	bench new-site {site_name} --db-name '{db_name}' &&\
-	touch sites/currentsite.txt && echo {site_name} > sites/currentsite.txt &&\
+	touch sites/currentsite.txt && echo '{site_name}' > sites/currentsite.txt &&\
 	bench --site valsa.site set-config developer_mode true &&\
 	bench --site valsa.site install-app frappe erpnext mobile e_billing sales_drive edi cheque_management logistics valsa")
