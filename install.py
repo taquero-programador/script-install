@@ -7,7 +7,7 @@ site_name = input('Name for site: ')
 db_name = input('Name for Database: ')
 
 os.system(f"bench init {name_bench or 'frappe-bench'} --frappe-branch version-13\
-	&& {name_bench or 'frappe-bench'} &&\
+	&& cd {name_bench or 'frappe-bench'} &&\
 	bench get-app https://git.gonext.com.mx/frappe/frappe.git --branch prod &&\
 	rm -rf apps/frappe/frappe/integrations/doctype/twilio_settings &&\
 	bench get-app https://git.gonext.com.mx/frappe/erpnext.git --branch prod &&\
